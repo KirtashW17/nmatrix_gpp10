@@ -49,7 +49,7 @@ def gplusplus_version
 
   raise("unable to determine g++ version (match to get version was nil)") if major.nil? || minor.nil? || patch.nil?
 
-  [major, minor, patch]
+  [major.to_i, minor.to_i, patch.to_i]
 end
 
 
